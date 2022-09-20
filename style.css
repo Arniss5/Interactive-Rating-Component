@@ -30,9 +30,12 @@ body {
 
 .card {
     background-color: var(--card);
+    width: 50vw;
+    max-width: 400px;
+    min-height: 420px;
     padding: 2em;
     border-radius: 2em;
-    display: none;
+    display: block;
 }
 
 .star-circle {
@@ -47,8 +50,7 @@ body {
 
 .text-container {
     padding: 2em 0;
-    width: 50vw;
-    max-width: 350px;
+
 }
 
 .text-title {
@@ -114,17 +116,30 @@ body {
 
 .thank-you-card {
     background-color: var(--card);
-    padding: 3em 1em;
+    padding: 3em 1.3em;
+    width: 50vw;
+    max-width: 400px;
+    min-height: 420px;
     border-radius: 2em;
-    display: block;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.selection {
+    color: var(--primary);
+    background-color: var(--circle);
+    padding: 0.3em 1em;
+    margin-top: 2em;
+    border-radius: 2em;
+}
+.thank {
+    margin-top: 1.2em;
+}
+
 .text.thank-you {
-    width: 50vw;
-    max-width: 350px;
     text-align: center;
 }
+
+
