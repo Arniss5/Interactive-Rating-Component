@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;700&display=swap');
+
+:root {
+    /*COLOURS */
+    --primary:rgb(251, 116, 19);
+    --title: rgb(255, 255, 255);
+    --text: rgb(149, 158, 172);
+    --circle: rgb(124, 135, 152, 0.1);
+    --card: rgb(37, 45, 55, 0.8);
+    --background: rgb(18, 20, 23);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Overpass', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SCORING CARD */
+
+.card {
+    background-color: var(--card);
+    padding: 2em;
+    border-radius: 2em;
+    display: none;
+}
+
+.star-circle {
+    background-color: var(--circle);
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    padding: 2em 0;
+    width: 50vw;
+    max-width: 350px;
+}
+
+.text-title {
+    color: white;
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+}
+
+.text {
+    line-height: 1.5em;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.score {
+    background-color: var(--circle);
+    font-size: 1.1em;
+    width: 2.8em;
+    height: 2.8em;
+    margin: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.score:hover {
+    color: white;
+    background-color: var(--text);
+    
+}
+
+.score.active {
+    color: white;
+    background-color: var(--primary);
+}
+
+.submit-btn {
+    color: white;
+    background-color: var(--primary);
+    font-family: 'Overpass', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    color: var(--primary);
+    background-color: white;
+}
+
+/* THANK YOU CARD */
+
+.thank-you-card {
+    background-color: var(--card);
+    padding: 3em 1em;
+    border-radius: 2em;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text.thank-you {
+    width: 50vw;
+    max-width: 350px;
+    text-align: center;
+}
